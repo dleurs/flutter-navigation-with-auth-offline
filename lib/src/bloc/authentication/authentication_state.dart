@@ -10,24 +10,24 @@ class InitialAuthenticationState extends AuthenticationState {
   }
 }
 
-class AuthenticationProcessing extends AuthenticationState {
+class AuthenticationProcessingState extends AuthenticationState {
   @override
   String toString() {
     return 'AuthenticationProcessingState';
   }
 }
 
-class AuthenticationSuccess extends AuthenticationState {
+class AuthenticationSuccessState extends AuthenticationState {
   @override
   String toString() {
     return 'AuthenticationSuccessState';
   }
 }
 
-class AuthenticationError extends AuthenticationState {
+class AuthenticationErrorState extends AuthenticationState {
   final String error;
 
-  AuthenticationError({this.error});
+  AuthenticationErrorState({this.error});
 
   @override
   String toString() {
@@ -35,7 +35,7 @@ class AuthenticationError extends AuthenticationState {
   }
 }
 
-class LoggedOut extends AuthenticationState {
+class LoggedOutState extends AuthenticationState {
   @override
   String toString() {
     return 'LoggedOutState';
