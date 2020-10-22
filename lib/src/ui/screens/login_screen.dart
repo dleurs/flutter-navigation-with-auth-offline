@@ -17,7 +17,18 @@ class _LoginScreenState extends BaseScreenState<LoginScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text('Login page'),
+          Text(
+            'Login page',
+            style: Theme.of(context).textTheme.headline4,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Enter email address'),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('Enter password'),
+          ),
           RaisedButton(onPressed: this.doLogin, child: Text('Login'))
         ],
       ),

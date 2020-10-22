@@ -8,12 +8,13 @@ class AppRoutes {
   static const String initial = '/';
   static const String login = '/login';
   static const String home = '/home';
+  static const String restaurant = '/restaurant';
 
   static final Map<String, RouteConfig> configs = {
-    initial: RouteConfig(true),
-    // should be true,
+    initial: RouteConfig(false),
     login: RouteConfig(false),
     home: RouteConfig(true),
+    restaurant: RouteConfig(true),
   };
 
   static RouteConfig getConfig(String routeName) {
@@ -22,7 +23,4 @@ class AppRoutes {
     }
     return RouteConfig(false);
   }
-
-  isInitial
-
 }
