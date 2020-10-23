@@ -1,10 +1,10 @@
 # Flutter navigation with Auth offline
 
-![]("/assets/nav_v1_flutter.gif")
+!["Navigator Gif Flutter"](/assets/nav_v1_flutter.gif)
 
 
 
-![]("/assets/LargeGraphNavigator_v1.png")
+!["Large drawio graph"](/assets/LargeGraphNavigator_v1.png)
 
 This project used Flutter Navigator 1.0, good for mobile, not for web
 Another git repository will use Flutter Navigator 2.0, that handles web
